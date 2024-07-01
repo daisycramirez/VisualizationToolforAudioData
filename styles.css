@@ -1,0 +1,832 @@
+/* 
+home page
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center; /* Ensures text is centered */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding to make header thinner */
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Adjust size to make the logo bigger */
+    height: auto;
+    margin-right: 5px; /* Reduced space between logo and text */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for tabs */
+    padding: 10px 15px; /* Added padding to make tabs larger */
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Add padding to ensure footer doesn't overlap content */
+    text-align: left; /* Align main content to the left */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero video {
+    width: 70%; /* Adjust size as needed */
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.cta-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px; /* Added margin to separate button from video */
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.section-divider {
+    width: 80%;
+    margin: 40px auto; /* Adds space around the divider */
+    border: none;
+    border-top: 2px solid #ccc; /* Style the divider */
+}
+
+.about {
+    margin-top: 20px; /* Reduce margin to bring it closer to the divider */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-titles {
+    text-align: left; /* Align titles to the left */
+    margin-bottom: 20px; /* Add margin to separate titles from content */
+    width: 70%; /* Set the width to match the content */
+    max-width: 1000px; /* Set a maximum width for the content */
+    padding-left: 10px; /* Add padding to move it slightly to the left */
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 10px; /* Reduced margin to balance spacing */
+    font-weight: bold;
+}
+
+.about h3 {
+    font-size: 20px; /* Adjust font size to make it smaller */
+    margin-bottom: 20px; /* Adjusted margin for proper spacing */
+    font-weight: normal; /* Make it not bold */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 70%; /* Adjust width to make content centered and balanced */
+    max-width: 1000px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the about content */
+}
+
+.image-container {
+    width: 50%; /* Allocate half the space for the image */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    width: 50%; /* Allocate half the space for the text */
+    padding-left: 20px; /* Add space between the image and text */
+    text-align: justify; /* Justify the text */
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px 0; /* Add space between paragraphs */
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+    padding: 10px 20px; /* Adjusted padding */
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative; /* Changed from fixed to relative to avoid overlapping content */
+}
+
+footer .footer-logo {
+    margin-right: 10px; /* Adjusted space between logo and text */
+}
+
+footer .footer-logo img {
+    width: 100px; /* Same size as header logo */
+    height: auto;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-text p {
+    margin: 0;
+    margin-bottom: 5px; /* Added small margin to create space between title and link */
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/*
+dataset
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center; /* Ensures text is centered */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjusted padding to make header thinner */
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Adjust size to make the logo bigger */
+    height: auto;
+    margin-right: 5px; /* Reduced space between logo and text */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for tabs */
+    padding: 10px 15px; /* Added padding to make tabs larger */
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Add padding to ensure footer doesn't overlap content */
+    text-align: center; /* Align main content to the center */
+}
+
+main h1 {
+    font-size: 24px;
+    margin-bottom: 40px; /* Increased margin to create more white space between title and pictures */
+}
+
+.dataset-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Increased gap to create more space between pictures */
+}
+
+.dataset-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 220px;
+}
+
+.dataset-grid img {
+    width: 200px;
+    height: 200px; /* Ensure all images are the same size */
+    object-fit: cover; /* Ensure images are cropped to fit the container */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dataset-grid button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 200px;
+}
+
+.dataset-grid button:hover {
+    background-color: #333;
+}
+
+
+footer {
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+    padding: 10px 20px; /* Adjusted padding */
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative; /* Changed from fixed to relative to avoid overlapping content */
+}
+
+footer .footer-logo {
+    margin-right: 10px; /* Adjusted space between logo and text */
+}
+
+footer .footer-logo img {
+    width: 100px; /* Same size as header logo */
+    height: auto;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-text p {
+    margin: 0;
+    margin-bottom: 5px; /* Added small margin to create space between title and link */
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*
+audio page
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.drone-audio img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 40px; /* Added space between the drone image and audio elements */
+}
+
+.audio-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.audio-container {
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+.audio-container.center {
+    flex-basis: 100%;
+}
+
+audio {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+    padding: 10px 20px; /* Adjusted padding */
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative; /* Changed from fixed to relative to avoid overlapping content */
+}
+
+footer .footer-logo {
+    margin-right: 10px; /* Adjusted space between logo and text */
+}
+
+footer .footer-logo img {
+    width: 100px; /* Same size as header logo */
+    height: auto;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-text p {
+    margin: 0;
+    margin-bottom: 5px; /* Added small margin to create space between title and link */
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* visual page */
+
+/* Body and header styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.drone-visualization {
+    margin: 0 auto;
+}
+
+.drone-visualization h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.drone-visualization .drone-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.visuals-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.visual {
+    text-align: center;
+}
+
+.visual img {
+    width: 400px;
+    height: auto;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000;
+    text-align: left;
+    padding: 10px 20px; /* Adjusted padding */
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    position: relative; /* Changed from fixed to relative to avoid overlapping content */
+}
+
+footer .footer-logo {
+    margin-right: 10px; /* Adjusted space between logo and text */
+}
+
+footer .footer-logo img {
+    width: 100px; /* Same size as header logo */
+    height: auto;
+}
+
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-text p {
+    margin: 0;
+    margin-bottom: 5px; /* Added small margin to create space between title and link */
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.drone-image {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.audio-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; /* Adjust the value as needed */
+}
+
+.audio-container {
+    margin: 20px; /* Adjust the value as needed */
+}
+
+/* contact page */
+/* I saw that you used sans-serif so I took away the roboto font but if you wanted to incorporate that I left*/
+/* the code snippets*/
+/*Importing the Roboto font*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
+body {
+    /*Removed roboto*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -1px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.contact {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+.contact a {
+    color: blue;
+    text-decoration: none;
+}
+.contact a:hover {
+    color: red;
+    text-decoration:underline;
+}
+.headshot {
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+/*This is responsive design: when the page is opened in full screen, there will be two names on each line*/
+/*When the page is resized, there will be one name on each line*/
+@media (max-width: 800px) {
+    .contact {
+        width: calc(100% - 40px);
+    }
+}
+
+.explanation-section {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 2px solid #000; /* Add a solid black border */
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.explanation-section h3 {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.explanation-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.explanation-section ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.explanation-section li {
+    margin-bottom: 10px;
+}
+
+.audio-files {
+    margin-top: 20px; /* Add space between the image and audio controls */
+}
+
+.buy-link {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-link:hover {
+    background-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    text-align: center; /* Ensures text is centered */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 5px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.visualization-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.visualization {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.visualization h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.visualization img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mfcc-container {
+    margin-right: 20px; /* Adjust this value to move the MFCC visual to the right */
+}
+
+
+
+
+
