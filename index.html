@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Audio Visualization Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="The Drone Lab Logo">
+            <span>The Drone Lab: Audio Visualization Tool</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="dataset.html">Dataset</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Drone Audio Visualization Tool</h1>
+            <p>Explore and analyze different drone sounds with our visualization tools.</p>
+            <video controls autoplay muted loop>
+                <source src="1f55dbc7-acf1-43ae-b37a-cd47e1e9bb07 (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="cta-button"><a href="dataset.html">Get Started</a></button>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="about" class="about">
+            <div class="about-titles">
+                <h2>About</h2>
+                <h3>Research Overview</h3>
+            </div>
+            <div class="about-content">
+                <div class="image-container">
+                    <img src="research-image.png" alt="Research Image">
+                </div>
+                <div class="text-container">
+                    <p>
+                        This project focuses on the development of a comprehensive UAV (Unmanned Aerial Vehicle) audio dataset and the implementation of a precise and efficient audio-based UAV classification system using Convolutional Neural Networks (CNNs). UAVs, commonly known as drones, have seen significant growth in popularity, which brings about potential privacy and security threats. Addressing these concerns, this research aims to enhance UAV detection and classification through audio analysis.
+                    </p>
+                    <p>
+                        A large-scale UAV audio dataset has been collected, encompassing various models and environmental conditions, to ensure robustness and accuracy. The dataset is meticulously labeled and pre-processed to train the CNN-based classifier effectively. The classifier has shown impressive performance, achieving high accuracy in classifying UAVs into distinct categories.
+                    </p>
+                    <p>
+                        The significance of this research lies in its potential applications in security and surveillance, enabling authorities to detect and classify UAVs in real-time based on their audio signatures. This advancement could greatly aid in mitigating risks associated with unauthorized or malicious drone activities.
+                    </p>
+                    <p>
+                        For more detailed insights into the research methodology and findings, refer to the published paper linked below.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.png" alt="The Drone Lab Logo">
+        </div>
+        <div class="footer-text">
+            <p>The Drone Lab: Audio Visualization Tool</p>
+            <p><a href="https://doi.org/10.1109/IRC55401.2022.00039">https://doi.org/10.1109/IRC55401.2022.00039</a></p>
+        </div>
+    </footer>
+</body>
+</html>
